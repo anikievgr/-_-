@@ -1,0 +1,20 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 300px;
+        font-family: Arial;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M173.711,6l-48.4.443a8.435,8.435,0,0,0-8.212,5.321c-2.366,5.794-55.751,143.217-55.751,143.217L33.685,94.236s-3.638-5.321-7.779-5.321H3v22.17H17.262l35.871,78.481S56.778,194,61.776,194s8.644-4.877,8.644-4.877L133.95,28.17h40.625V6h-0.864Z"/>
+  <text id="X" class="cls-2" transform="translate(132.597 146.829) scale(0.333 0.342)">X</text>
+</svg>

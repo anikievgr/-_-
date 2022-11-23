@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.2
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3306
+- Generation Time: Nov 23, 2022 at 04:50 PM
+- Server version: 5.7.24
+- PHP Version: 8.0.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="test" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="test">
+                CREATE TABLE `test` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `class` int(11) NOT NULL,
+                  `lesson` text NOT NULL,
+                  `them` text,
+                  `thime` int(11) DEFAULT NULL,
+                  `question№1` text,
+                  `answerOptions№1` text,
+                  `rightAnswer№1` int(11) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'test'
+    -->
+    <database name="test">
+        <!-- Table test -->
+        <table name="test">
+            <column name="id">1</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry</column>
+            <column name="them">Символы и названия химических элементов</column>
+            <column name="thime">15</column>
+            <column name="question№1">H</column>
+            <column name="answerOptions№1">1</column>
+            <column name="rightAnswer№1">1</column>
+        </table>
+        <table name="test">
+            <column name="id">2</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry </column>
+            <column name="them">гранические газы </column>
+            <column name="thime">15</column>
+            <column name="question№1"> 1</column>
+            <column name="answerOptions№1">2 3 4 </column>
+            <column name="rightAnswer№1">1</column>
+        </table>
+        <table name="test">
+            <column name="id">3</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry </column>
+            <column name="them">гранические газы </column>
+            <column name="thime">15</column>
+            <column name="question№1"> 2</column>
+            <column name="answerOptions№1">2 3 4</column>
+            <column name="rightAnswer№1">2</column>
+        </table>
+        <table name="test">
+            <column name="id">4</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry </column>
+            <column name="them">гранические газы </column>
+            <column name="thime">15</column>
+            <column name="question№1"> 3</column>
+            <column name="answerOptions№1">234</column>
+            <column name="rightAnswer№1">3</column>
+        </table>
+        <table name="test">
+            <column name="id">5</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry </column>
+            <column name="them">гранические газы </column>
+            <column name="thime">15</column>
+            <column name="question№1"> 4</column>
+            <column name="answerOptions№1">456</column>
+            <column name="rightAnswer№1">4</column>
+        </table>
+        <table name="test">
+            <column name="id">6</column>
+            <column name="class">11</column>
+            <column name="lesson">chemistry </column>
+            <column name="them">гранические газы </column>
+            <column name="thime">15</column>
+            <column name="question№1"> 5</column>
+            <column name="answerOptions№1">567</column>
+            <column name="rightAnswer№1">5</column>
+        </table>
+        <table name="test">
+            <column name="id">12</column>
+            <column name="class">3</column>
+            <column name="lesson">math</column>
+            <column name="them">Умножение </column>
+            <column name="thime">1</column>
+            <column name="question№1"> 2*2</column>
+            <column name="answerOptions№1"></column>
+            <column name="rightAnswer№1">4</column>
+        </table>
+        <table name="test">
+            <column name="id">13</column>
+            <column name="class">3</column>
+            <column name="lesson">math</column>
+            <column name="them">Умножение </column>
+            <column name="thime">1</column>
+            <column name="question№1"> 3*3</column>
+            <column name="answerOptions№1"></column>
+            <column name="rightAnswer№1">9</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,455 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #c7d1d7;
+}
+.LokSkrol{
+  overflow: hidden;
+  overflow-y:hidden;
+overflow-x:hidden; 
+}
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #222324;
+}
+.menu-content {
+    display: flex;
+    justify-content: center;
+}
+.menu-case {
+  display: flex;
+  align-items: center;
+
+  width: 56px;
+  overflow: hidden;
+  transition-duration: 1000ms;
+}
+.menu-case p {
+    color: white;
+    
+}
+.menu-case a {
+  cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.menu-case img{
+  height: 50px;
+  margin-right: 7px;
+}
+.menu-case:hover {
+   width: 150px;
+   transition-duration: 1000ms;
+}
+.wrapper{
+    margin: 10% auto;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #222324;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide{
+    cursor: pointer;
+  }
+  .swiper-slide img{
+   height: 100%;
+   border-radius: 20px;
+  }
+  .nameLessons{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+  .nameLessons{
+    color: white;
+    font-size: 40px;
+  }
+  /*пердметы*/
+  .lessonsContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .lesson {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .chemistryColor{
+    background-color: #30e584;
+  }
+  .mathColor{
+    background-color: #ff5353;
+  }
+  .itColor{
+    background-color: #4694ff;
+  }
+  .fisiksColor{
+    background-color: #ff8f4a;
+  }
+  .bialogiaColor{
+    background-color: #067d68;
+  }
+  .lesson p{
+   text-align: center;
+   color: white;
+   font-size: 20px;
+  }
+  .poapap{
+ visibility: hidden;
+ overflow: hidden;
+opacity: 0;
+ transition-duration: 500ms;
+  }
+  .poapap._open{
+    visibility: visible;
+  opacity: 1;
+    transition-duration: 500ms;
+  }
+  .poapap-bakground{
+    opacity: 0;
+    position: absolute;
+    background-color: #22232497;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition-duration: 1000ms;
+  
+  }
+  ._open .poapap-bakground{
+  opacity: 1;
+  transition-duration: 1000ms;
+  position: fixed;
+  }
+  .blur{
+    filter: blur(5px);
+  }
+  .poapap-lessons {
+    z-index: 2;
+    width: 70%;
+    height: 300px;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+  .poapap_lessons_img img{
+       visibility: hidden;
+       position: absolute;
+       top: 50%;
+       left: 0;
+       transform: translate(0, -50%);
+
+  }
+  .namePoapapLessons p{
+    visibility: hidden; 
+    font-size: 0;
+}
+  .chemistryColor .poapap_lessons_img img:nth-child(1){
+     visibility: visible;
+
+  }
+  .chemistryColor .namePoapapLessons p:nth-child(1){
+    visibility: visible;
+    font-size: 20px;
+ }
+  .mathColor .poapap_lessons_img img:nth-child(2){
+    visibility: visible;
+ }
+ .mathColor .namePoapapLessons p:nth-child(2){
+  visibility: visible;
+  font-size: 20px;
+}
+ .itColor .poapap_lessons_img img:nth-child(3){
+  visibility: visible;
+}
+.itColor .namePoapapLessons p:nth-child(3){
+  visibility: visible;
+  font-size: 20px;
+}
+.fisiksColor .poapap_lessons_img img:nth-child(4){
+  visibility: visible;
+}
+.fisiksColor .namePoapapLessons p:nth-child(4){
+  visibility: visible;
+  font-size: 20px;
+}
+.bialogiaColor .poapap_lessons_img img:nth-child(5){
+  visibility: visible;
+}
+.bialogiaColor .namePoapapLessons p:nth-child(5){
+  visibility: visible;
+  font-size: 20px;
+}
+  .Lessonsclass {
+    overflow-y: scroll;
+    height: 60%;
+    width: 90%;
+    position: absolute;
+       top: 50%;
+       left: 0;
+       transform: translate(0, -50%);
+    padding: 10px;
+  }
+  .namePoapapLessons, .lessons-class {
+    margin-left: 230px;
+    color: white;
+  }
+  
+  .namePoapapLessons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .lessons-class  li{
+    display: none;
+  }
+.chemistryColor .lessons-class li:nth-child(-n+4){
+ display: block;
+}
+.mathColor .lessons-class li:nth-child(-n+11){
+  display: block;
+ }
+ .itColor .lessons-class li:nth-child(-n+5){
+  display: block;
+ }
+ .fisiksColor .lessons-class li:nth-child(-n+5){
+  display: block;
+ }
+ .fisiksColor .lessons-class li:nth-child(-n+5){
+  display: block;
+ }
+ .fisiksColor .lessons-class li:nth-child(-n+5){
+  display: block;
+ }
+.bialogiaColor .lessons-class li:nth-child(-n+5){
+  display: block;
+ }
+  .lessons-class  a:hover{
+    background-color: #22232485;
+  }
+  
+  .Lessonsclass::-webkit-scrollbar {
+    width: 6px;         
+    border-radius: 20px;  
+  }
+  .Lessonsclass::-webkit-scrollbar-track {
+    background: #22232400;      
+  }
+  .Lessonsclass::-webkit-scrollbar-thumb {
+    background-color: #22232485;    
+    border-radius: 20px;       
+  }
+  .InoutClass a{
+    display: block;
+    margin-bottom: 5px;
+    line-height: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+  }
+/* темы */
+.contentTheme{
+  margin-top: 30px;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+.contentTheme .themt{
+  display: block;
+  color: #222324;
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #a9b2b8;
+  border-radius: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.headerTest img{
+  height: 50px;
+}
+.logoLesson {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+.form{
+  margin:  100px auto;
+  width: 50%;
+  font-size: 20px;
+}
+.questionTest {
+  display: block;
+  margin-bottom: 20px;
+}
+.answersTest {
+  display: block;
+  margin-bottom: 20px;
+}
+.answerTest {
+  width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  font-size: 14px;
+  resize: vertical;
+}
+.listLessons{
+  display: block;
+}
+.On{
+  display: none;
+}
+.Forms{
+  
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.two{
+  width: 90%;
+}
+
+.Forms p{
+ margin-bottom: 10px;
+ margin-left:20px;
+ margin-right: 20px;
+}
+.two textarea{
+  width: 90%;
+  margin:0;
+}
+.Forms .two input{
+  width: 90%;
+  margin-left:0;
+  margin-right: 0;
+}
+.Forms input{
+  border: 1px solid #222324;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left:20px;
+  margin-right: 20px;
+  min-height: 20px;
+  height: 20px;
+  resize: vertical;
+ }
+ .Forms textarea{
+  margin-left:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  resize: vertical;
+  min-height: 30px;
+  height: 30px;
+ }
+ .Forms button{
+margin: 0 20px;
+ }
+ .estimation {
+  width: 100%;
+  height: 1000px;
+  display: block;
+
+}
+
+.evaluation-form {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 100px auto;
+}
+.thime{
+  display: flex;
+}
+.ansersBlok{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a9b2b8;
+  width: 50%;
+  height: 40%;
+  border-radius: 20px;
+  min-height: 100px;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader{
+  width: 200px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #2223247a;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+.progress{
+  width: 30px;
+  height: 100%;
+  background-color: #30e584;
+  border-radius: 20px;
+}
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testListLI li{
+  background-color: #a9b2b8;
+  padding: 20px;
+  margin: 29px 0;
+  border-radius: 20px;
+}
+.button{
+  border: none;
+  border-radius: 20px;
+  background-color: #30e584;
+  margin: 20px auto;
+  width: 50%;
+  height: 30px;
+
+}
+button{
+  cursor: pointer;
+}
