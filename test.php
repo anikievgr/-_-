@@ -33,7 +33,7 @@ $THEME =  $query['x'];
    // echo '</pre>';
    // echo '<pre>';
    // var_dump($answer);
-   // echo '</pre>';
+   // echo '</pre>';as
    $_SESSION['ANSWER'] = $answer;
    //$Lessons = trim($Lessons);
    $lodoLessons;
